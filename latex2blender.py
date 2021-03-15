@@ -125,7 +125,7 @@ def import_latex(self, context, latex_code, text_scale, x_loc, y_loc, z_loc, x_r
     else:
         temp = open(temp_file_name + '.tex', "a")
         default_preamble = '\\documentclass{amsart}\n\\usepackage{amssymb,amsfonts}\n\\usepackage{tikz}' \
-                           '\n\\usepackage{tikz-cd}\n\\usepackage{chemfig}\n\\pagestyle{empty}\n\\thispagestyle{empty}'
+                           '\n\\usepackage{tikz-cd}\n\\usepackage{chemfig}\n\\usepackage{xymtex}\n\\usepackage{xymtexpdf}\n\\pagestyle{empty}\n\\thispagestyle{empty}'
         temp.write(default_preamble)
 
     # Add latex code to temp.tex and close the file.
